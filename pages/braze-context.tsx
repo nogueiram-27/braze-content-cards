@@ -55,6 +55,7 @@ export default function BrazeProvider({
         changeUser,
         openSession,
         getUser,
+        requestContentCardsRefresh
       }) => {
         initialize(process.env.NEXT_PUBLIC_BRAZE_API_KEY, {
           baseUrl: process.env.NEXT_PUBLIC_BRAZE_SDK_ENDPOINT,
@@ -82,6 +83,7 @@ export default function BrazeProvider({
         changeUser(brazeUserId);
 
         openSession();
+        requestContentCardsRefresh();
       }
     );
   }, []);
