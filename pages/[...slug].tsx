@@ -1,11 +1,11 @@
 import PageWrap from '@/components/page-wrap';
 import React from 'react';
 
-export default function Home() {
+export default function Page() {
 
   return (
     <PageWrap>
-      <h1>Welcome to the Home Page</h1>
+      <h1>Welcome to the Another Page</h1>
     </PageWrap>
   );
 }
